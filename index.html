@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Bootstrap-5</title>
+    <link rel="shortcut icon" href="imges/favicon_logo.png" type="image/x-icon">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+  </head>
+  <body>
+
+    <!-- form start -->
+     <div class="container">
+      <form class="row g-3 needs-validation" novalidate>
+
+        <div class="col-md-6">
+          <label for="f_name" class="form-label">First name</label>
+          <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter your first name" required>
+          <div class="valid-feedback">
+              Looks good!
+          </div>
+           <div class="invalid-feedback">
+              Enter your first name.
+            </div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="l_name" class="form-label">Last name</label>
+          <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter your last name" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+              Enter your last name.
+            </div>
+        </div>
+
+         <div class="col-md-6">
+          <label for="username" class="form-label">Username</label>
+          <div class="input-group has-validation username">
+            <input type="text" class="form-control username" id="username" name="username" placeholder="Enter your username" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+
+         <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="text" class="form-control email" id="email" name="email" placeholder="Enter your email address" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+              Enter your email address.
+            </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" placeholder="Type your city name" required>
+          <div class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="country" class="form-label">Country</label>
+          <select class="form-select country" id="country" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Bangladesh</option>
+            <option>Pakistan</option>
+          </select>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <label for="zip" class="form-label">Zip</label>
+          <input type="number" class="form-control zip" id="zip" name="zip" placeholder="Enter zip code" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+
+      </form>
+     </div>
+    <!-- form end -->
+
+    <!-- js link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
